@@ -35,6 +35,17 @@
     </developer>
   </developers>
   <dependencies>
+    <dependency>
+      <groupId>bundles</groupId>
+      <artifactId>com.idega.core</artifactId>
+      <!-- <version>1.9</version>-->
+      <version>SNAPSHOT</version>
+      <type>jar</type>
+      <url>http://www.idega.com/</url>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>  
   </dependencies>
   <build>
     <sourceDirectory>src/java</sourceDirectory>
