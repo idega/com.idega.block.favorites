@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <extend>${base.project.dir}/base-dependencies.xml</extend>
+  <pomVersion>3</pomVersion>
+  <name>idegaWeb Favorites Block</name>
+  <artifactId>com.idega.block.favorites</artifactId>
+  <currentVersion>1.0-SNAPSHOT</currentVersion>
+  <inceptionYear>2004</inceptionYear>
+  <shortDescription>Favorites Block</shortDescription>
+  <versions>
+  </versions>
+  <branches/>
+  <developers>
+    <developer>
+      <name>Tryggvi Larusson</name>
+      <id>tryggvil</id>
+      <email>tryggvi@idega.is</email>
+      <organization>idega software</organization>
+      <roles/>
+    </developer>
+    <developer>
+      <name>Thorhallur Helgason</name>
+      <id>laddi</id>
+      <email>laddi@idega.is</email>
+      <organization>idega software</organization>
+      <roles/>
+    </developer>
+    <developer>
+      <name>Anna Carlsdóttir</name>
+      <id>anna</id>
+      <email>anna@idega.is</email>
+      <organization>idega software</organization>
+      <roles/>
+    </developer>
+  </developers>
+  <dependencies>
+  </dependencies>
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+    <unitTestSourceDirectory>src/test</unitTestSourceDirectory>
+    <unitTest>
+      <includes>
+        <include>**/*Test.java</include>
+      </includes>
+    </unitTest>
+  </build>
+  <properties/>
+</project>
