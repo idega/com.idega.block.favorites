@@ -26,8 +26,7 @@ import com.idega.user.data.User;
  */
 public class FavoriteQuickLink extends FavoriteBlock {
 
-	private static final String IW_BUNDLE_IDENTIFIER = "com.idega.block.favorites";
-	private static final String PARAMETER_QUICK_LINK = "quick_link_url";
+	private static final String PARAMETER_QUICK_LINK_URL = "quick_link_url";
 	
 	private int iSpaceBetween = -1;
 	private int iMaxLength = -1;
@@ -65,7 +64,7 @@ public class FavoriteQuickLink extends FavoriteBlock {
 		form.add(table);
 		int column = 1;
 
-		DropdownMenu quickLinks = (DropdownMenu) getInput(new DropdownMenu(PARAMETER_QUICK_LINK));
+		DropdownMenu quickLinks = (DropdownMenu) getInput(new DropdownMenu(PARAMETER_QUICK_LINK_URL));
 		Link go = null;
 		if (this.iButtonImage != null) {
 			go = new Link(this.iButtonImage);
@@ -73,7 +72,7 @@ public class FavoriteQuickLink extends FavoriteBlock {
 		else {
 			go = getLink(getResourceBundle().getLocalizedString("go", "Go!"));
 		}
-		go.setURL("javascript:" + getScriptCaller(PARAMETER_QUICK_LINK));
+		go.setURL("javascript:" + getScriptCaller(PARAMETER_QUICK_LINK_URL));
 
 		Iterator iter = quickLinkList.iterator();
 		while (iter.hasNext()) {
